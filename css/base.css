@@ -1,5 +1,5 @@
 /* base.css */
-body{font-family: var(--fonte-principal);
-    background-color: #ffffff;
+body{
+    font-family: var(--fonte-principal);
     color: #333333;
 }
