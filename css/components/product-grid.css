@@ -1,1 +1,80 @@
 /* product-grid.css */
+.card {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+}
+
+.top1 {
+    grid-area: top1;
+    background-image: url(../../images/products/card_imagem.jpg);
+
+}
+
+.top2 {
+    grid-area: top2;
+    background-color: coral;
+    background-image: url(../../images/products/roxo-verde-grid.jpg);
+}
+
+.midL {
+    grid-area: midL;
+    background-color: lightskyblue;
+    background-image: url(../../images/products/modelo-feminino.jpg);
+}
+
+.midR {
+    grid-area: midR;
+    background-color: lime;
+    background-image: url(../../images/products/futurista-grid.jpg);
+}
+
+.bottomL {
+    grid-area: bottomL;
+    background-color: lightpink;
+    background-image: url(../../images/products/preto-branco-grid.jpg);
+}
+
+.bottomR {
+    grid-area: bottomR;
+    background-color: gold;
+    background-image: url(../../images/products/moderno-grid.jpg);
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas:
+        "top1 top1 top2 top2"
+        "top1 top1 midL midR"
+        "bottomL bottomL midL bottomR";
+    gap: 30px;
+    margin-top: 40px;
+}
+.top1-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.card-title{
+    font-size: 1.25rem;
+    color: #EDEDED;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.card-subtitle{
+    font-size: 1.5rem;
+    color: #EDEDED;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.cta-group{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}

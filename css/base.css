@@ -2,6 +2,7 @@
 body{
     font-family: var(--fonte-principal);
     color: #333333;
+    
 }
 
 .btn{
@@ -30,4 +31,9 @@ body{
     background-color: #6329A2;
     color: #ffffff;
     border-color: #6329A2;
+}
+main{
+    padding: 2.5rem 0 0;
+    max-width: 1360px;
+    margin: 0 auto;
 }
